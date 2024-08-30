@@ -2,6 +2,9 @@
   
   import { reactive, ref } from 'vue';
   import Alerta from './Alerta.vue';
+  
+  const emits = defineEmits(['obtener-clima'])
+  
   const paises = [
       { codigo: 'US', nombre: 'Estados Unidos' },
       { codigo: 'MX', nombre: 'México' },
@@ -25,7 +28,7 @@
         setTimeout(()=>{error.value = ''}, 3000);
         return;
     }
-    console.log("Exito!")
+    emits('obtener-clima', busqueda);
   }
 
 </script>

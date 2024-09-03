@@ -12,7 +12,8 @@
       { codigo: 'CO', nombre: 'Colombia' },
       { codigo: 'CR', nombre: 'Costa Rica' },
       { codigo: 'ES', nombre: 'España' },
-      { codigo: 'PE', nombre: 'Perú' }
+      { codigo: 'PE', nombre: 'Perú' },
+      { codigo: 'SV', nombre: 'El Salvador'}
   ];
 
   const busqueda = reactive({
